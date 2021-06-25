@@ -1,0 +1,314 @@
+header
+    nav
+        .container
+            z-index: 2
+            position: fixed
+            width: 100%
+        .wrapper
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            .up
+                display: flex
+                justify-content: space-between
+                margin-top: 30px
+                .location,.number
+                    +adaptiv-font(18,12)
+                    color: $wh-color
+            .down
+                display: flex
+                justify-content: space-between
+                &_item
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: $wh-color
+                    width: 25%
+                    height: 50px
+                    +adaptiv-font(18,14)
+                    margin-top: 20px
+                    border-top: 1px solid
+                    border-right: 1px solid
+                    border-bottom: 1px solid
+                    a
+                        color: $wh-color
+                        text-decoration: none
+                    &:last-child
+                        border-right: none
+.start
+    min-height: 900px
+    background: url('../img/bg/bg-header.jpg') center (center / cover) no-repeat
+    padding-top: 700px
+    .buttons
+        display: flex
+        justify-content: center
+        .btn1,.btn2
+            width: 200px
+            height: 50px
+            color: white
+            background: $br-color
+            border: none
+            transition: all 0.4s
+            &:hover
+                background: $black-color
+        .btn1
+            margin-right: 30px
+.taste
+    min-height: 830px
+    background: $black-color
+    padding-top: 100px
+    .wrapper
+        min-height: 630px
+        padding-top: 60px
+        margin: 0 auto
+        border: 1px solid white
+        .header,.text
+            color: $wh-color
+            text-align: center
+        .header
+            +adaptiv-font(36,18)
+            width: 70%
+            margin: 0 auto
+        .divider
+            width: 160px
+            height: 1px
+            background: white
+            margin: 40px auto
+        .text
+            width: 65.7657%
+            margin: 0 auto
+            +adaptiv-font(16,12)
+        img
+            display: block
+            margin: 50px auto
+.history
+    min-height: 1220px
+    background: #E6E3C4
+    padding-top: 80px
+    .wrapper
+        display: flex
+        position: relative
+        margin: 0 auto
+        min-height: 900px
+        border-top: 1px solid $br-color
+        border-bottom: 1px solid $br-color
+        .column1,.column2
+            margin: 60px 0
+        .column1
+            width: 51%
+            .overhead
+                +adaptiv-font(20,14)
+            .header
+                margin-top: 30px
+                +adaptiv-font(36,28)
+            .divider
+                width: 160px
+                height: 1px
+                background: $black-color
+                margin: 30px 0
+            .text
+                +adaptiv-font(20,12)
+                width: 90%
+            .table
+                margin: 30px 0
+                .string
+                    position: relative
+                    width: 78.7610%
+                    height: 85px
+                    border-bottom: 1px solid $black-color
+                    &:last-child
+                        border: none
+                    .time,.text
+                        display: inline-block
+                    .time
+                        position: relative
+                        width: 18.3947%
+                        height: 85px
+                        +adaptiv-font(18,12)
+                        border-right: 1px solid $black-color
+                        p
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                    .text
+                        position: absolute
+                        top: 0
+                        padding: 5px 0 0 30px
+                        height: 100%
+                        width: 100%
+                        .name
+                            +adaptiv-font(20,12)
+                            margin: 0
+                        .descr
+                            +adaptiv-font(18,10)
+                            margin-top: 10px
+            .more
+                width: 255px
+                height: 50px
+                color: white
+                background: $br-color
+                +adaptiv-font(20,18)
+                border: none
+                margin-top: 30px
+        .column2
+            width: 48.6486%
+            .image1
+                background: url('../img/history1.jpg') center (center / cover) no-repeat
+                width: 100%
+                height: 64.7398%
+            .image2,.image3
+                display: inline-block
+                margin-top: 30px
+                width: 47%
+                height: 30.0580%
+            .image2
+                background: url('../img/history2.jpg') center (center / cover) no-repeat
+                margin-right: 10px
+            .image3
+                background: url('../img/history3.jpg') center (center / cover) no-repeat
+.registration
+    min-height: 765px
+    background: $black-color
+    padding-top: 130px
+    .wrapper
+        position: relative
+        min-height: 540px
+        margin: 0 auto
+        .header
+            position: absolute
+            width: 44.1441%
+            left: 50%
+            transform: translate(-50%, -50%)
+            +adaptiv-font(36,18)
+            color: $wh-color
+            background: $black-color
+            text-align: center
+            z-index: 1
+        .image1
+            background: url('../img/grapes.png') center (center / cover) no-repeat
+            position: absolute
+            top: -50px
+            left: -50px
+            width: 23.5%
+            height: 48%
+        .image2
+            background: url('../img/barrel.png') center (center / cover) no-repeat
+            position: absolute
+            top: -20px
+            right: -50px
+            width: 23%
+            height: 40%
+        .border
+            border: 1px solid white
+            min-height: 540px
+            .block
+                width: 50%
+                margin: 0 auto
+                .divider
+                    width: 120px
+                    height: 1px
+                    background: $wh-color
+                    margin: 65px auto
+                .subheader
+                    color: $wh-color
+                    text-align: center
+                    +adaptiv-font(18,14)
+                    margin: 0 auto
+                .registr
+                    margin-top: 80px
+                    input[type="text"],input[type="tel"],input[type="button"]
+                        color: white
+                        display: inline-block
+                        background: none
+                        outline: none
+                        transition: all 0.4s
+                    .name,.number,.loc
+                        width: 46.0300%
+                        height: 30px
+                        border: none
+                        padding-bottom: 15px
+                        border-bottom: 1px solid $wh-color
+                        &:hover
+                            border-bottom: 1px solid #E6E3C4
+                    .name
+                        margin-right: 6%
+                    .loc
+                        width: 99%
+                        height: 30px
+                        margin-top: 40px
+                    .btn
+                        width: 99%
+                        height: 50px
+                        margin-top: 40px
+                        border: 1px solid $wh-color
+                        &:hover
+                            color: $black-color
+                            border: none
+                            background: #E6E3C4
+footer
+    min-height: 200px
+    background: $br-color
+    padding: 50px 0
+    .wrapper
+        display: flex
+        flex-flow: column
+        margin: 0 auto
+        .row1
+            padding: 15px 25px 0 25px
+            border-top: 1px solid $wh-color
+            ul
+                display: flex
+                flex-flow: row
+                justify-content: space-evenly
+                list-style: none
+                a
+                    color: $wh-color
+                    +adaptiv-font(16,10)
+                    text-decoration: none
+        .row2
+            display: flex 
+            justify-content: space-evenly
+            align-items: center
+            border-top: 1px solid $wh-color
+            border-bottom: 1px solid $wh-color
+            padding-left: 60px
+            &_item
+                position: relative
+                text-align: center
+                height: 100%
+                a
+                    text-decoration: none
+                    color: $wh-color
+                    +adaptiv-font(16,9)
+                &:after  
+                    content: ''
+                    position: absolute
+                    left: 0
+                    top: -13px
+                    height: 50px
+                    width: 1px  
+                    background: $wh-color
+                    color: $wh-color
+                &:first-child
+                    &:after
+                      visibility: hidden  
+            .other
+                display: flex
+                justify-content: space-between
+                padding-top: 10px
+                width: 20%
+                &::after
+                    top: 0
+                ul
+                    display: flex
+                    justify-content: space-around
+                    list-style: none
+                    width: 100%
+                    margin-right: 25px
+        .row2 > div
+            width: 25%
+.txt-visible
+    display: block
+.txt-invisible
+    display: none
